@@ -1,0 +1,28 @@
+
+<!doctype html>
+<html>
+    <head>
+        <meta charset=utf-8>
+    </head>
+    <body>
+        你要显示特效的html  
+        <img src="image/favicon.ico" id="littleimg" onmouseout="hoverHiddendiv()" onmouseenter="hoverShowDiv()" />
+        <div style="border:1px solide #aaccff;display:none;" id="divHover" >
+            大图片显示如下
+        <img src="image/78X68.png" width="500px" height="300px" id="bigimg" />
+        </div>
+        <script type="text/javascript">
+            let divHover = document.getElementById("divHover");
+            function hoverShowDiv() {
+                console.log("显示大图片");
+                divHover.style.display = "block";
+                divHover.style.top = document.getElementById("littleimg").style.top + 10;
+                divHover.style.left = document.getElementById("littleimg").style.left + 10;
+            }
+            function hoverHiddendiv() {
+                console.log("显示小图片");
+                divHover.style.display = "none";
+            }
+</script>
+    </body>
+</html>
