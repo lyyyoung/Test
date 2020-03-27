@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="ee849932-ad26-4540-8fcf-67722932d779" name="Tomcat" url="http://localhost">
+        <fileTransfer port="0" mountedRoot="D:\apache-tomcat-5.5.36\webapps\html" accessType="MOUNT" />
+      </webServer>
+      <webServer id="58c519bc-c90b-43ff-8231-de2a4a265703" name="210" url="http://47.105.78.210">
+        <fileTransfer host="47.105.78.210" port="22" rootFolder="/usr/local" accessType="SFTP">
+          <advancedOptions>
+            <advancedOptions controlEncoding="UTF-8" dataProtectionLevel="Private" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+          <option name="port" value="22" />
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>
