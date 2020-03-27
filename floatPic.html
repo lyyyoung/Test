@@ -1,15 +1,15 @@
-
 <!doctype html>
-<html>
+<html lang="zh_cn">
     <head>
         <meta charset=utf-8>
+        <title>悬浮图标</title>
     </head>
     <body>
-        你要显示特效的html  
-        <img src="image/favicon.ico" id="littleimg" onmouseout="hoverHiddendiv()" onmouseenter="hoverShowDiv()" />
-        <div style="border:1px solide #aaccff;display:none;" id="divHover" >
+        你要显示特效的html
+        <img src="image/favicon.ico" alt="小图片" id="littleimg" onmouseout="hoverHiddendiv()" onmouseenter="hoverShowDiv()" />
+        <div style="border:1px solid #aaccff;display:none;" id="divHover" >
             大图片显示如下
-        <img src="image/78X68.png" width="500px" height="300px" id="bigimg" />
+        <img src="image/78X68.png" alt="大图片" width="78" height="68" id="bigimg" />
         </div>
         <script type="text/javascript">
             let divHover = document.getElementById("divHover");
