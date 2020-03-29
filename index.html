@@ -3,27 +3,36 @@
 <head>
     <meta charset="UTF-8">
     <title>测试</title>
-    <link rel="icon" href="image/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="image/favicon.ico" type="image/x-icon"/>
     <style>
         /*主体背景色*/
         body {background-color:#c0c0c0; /*background: rgba(255,255,0,1)*/}
     </style>
 </head>
-<body >
+<body>
 测试1111<br/>
 <video style="width: 300px;height: 240px;" controls="controls">
-    <source src="video/练习.mp4" type="video/mp4">
+    <source src="video/练习.mp4" type="video/mp4"/>
     您的浏览器不支持video标签。
 </video><br/>
-<canvas id="myCanvas" style="width: 100px;height: 80px"></canvas>
+<canvas id="myCanvas" style="width: 100px;height: 80px"></canvas><br/>
+<mark>定义有记号的文本</mark>
 <form>
-    文本输入框：<label>
-    <input type="text" value="默认显示文字" style="width: 100px">input配合label使用
-</label><br>
-    密码输入框：<label>
-    <input type="password" style="width: 100px">
-</label>
-    <label><input type="checkbox" checked="checked">男</label>
+    文本输入框：
+    <label >
+        <input type="text" value="默认显示文字" style="width: 100px"/>input配合label使用
+    </label><br/>
+    密码输入框：
+    <label>
+        <input type="password" style="width: 100px"/>
+    </label><br/>
+    <label>
+        <input type="checkbox" checked="checked"/>男
+    </label><br/>
+    <label>
+        <input type="datetime-local"/>
+        <input type="email"/>
+    </label>
 </form>
 
 <script>
