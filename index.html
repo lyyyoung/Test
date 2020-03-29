@@ -4,9 +4,44 @@
     <meta charset="UTF-8">
     <title>测试</title>
     <link rel="icon" href="image/favicon.ico" type="image/x-icon">
-
+    <style>
+        /*主体背景色*/
+        body {background-color:#c0c0c0; /*background: rgba(255,255,0,1)*/}
+    </style>
 </head>
-<body>
+<body >
 测试1111
+
+<form>
+    文本输入框：<label>
+    <input type="text" value="默认显示文字" style="width: 100px">input配合label使用
+</label><br>
+    密码输入框：<label>
+    <input type="password" style="width: 100px">
+</label>
+</form>
+<script>
+    document.write("使用script输出一段文字！")
+</script>
+<label for="hobby1">
+    <input type="checkbox" name="hobby" id="hobby1" value="0">我已阅读并同意&#60&lt;&trade;<br>
+</label>
+<label for="hobby2">
+    <input type="checkbox" name="hobby" id="hobby2" value="1">
+    <div class="inline-block">
+        <div><span style="background-color: aqua">斧</span></div>
+        <div>钺</div>
+        <div>钩</div>
+        <div>叉</div>
+    </div>
+</label>
+
+<form oninput="x.value=parseInt(a.value)+parseInt(b.value)">0
+    < input type="range" id="a" value="50">100
+    +< input type="number" id="b" value="50">
+    =<output name="x" for="a b"></output>
+</form><br>
+<iframe src="floatPic.html"  style="width: 50%;height: 768px;margin-left: 2%;border: 1px black solid"></iframe>
+<iframe src="floatPic.html"  style="width: 50%;"></iframe>
 </body>
 </html>
