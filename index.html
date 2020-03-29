@@ -10,8 +10,12 @@
     </style>
 </head>
 <body >
-测试1111
-
+测试1111<br/>
+<video style="width: 300px;height: 240px;" controls="controls">
+    <source src="video/练习.mp4" type="video/mp4">
+    您的浏览器不支持video标签。
+</video><br/>
+<canvas id="myCanvas" style="width: 100px;height: 80px"></canvas>
 <form>
     文本输入框：<label>
     <input type="text" value="默认显示文字" style="width: 100px">input配合label使用
@@ -19,7 +23,9 @@
     密码输入框：<label>
     <input type="password" style="width: 100px">
 </label>
+    <label><input type="checkbox" checked="checked">男</label>
 </form>
+
 <script>
     document.write("使用script输出一段文字！")
 </script>
@@ -37,8 +43,8 @@
 </label>
 
 <form oninput="x.value=parseInt(a.value)+parseInt(b.value)">0
-    < input type="range" id="a" value="50">100
-    +< input type="number" id="b" value="50">
+    <label><input type="range" id="a" value="50"></label>100
+    +<label><input type="number" id="b" value="50"></label>
     =<output name="x" for="a b"></output>
 </form><br>
 <iframe src="floatPic.html"  style="width: 50%;height: 768px;margin-left: 2%;border: 1px black solid"></iframe>
