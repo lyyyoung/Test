@@ -12,11 +12,21 @@
 <body>
 测试1111<br/>
 <video style="width: 300px;height: 240px;" controls="controls">
-    <source src="video/练习.mp4" type="video/mp4"/>
+    <source src="video/qq.mp4" type="" >
     您的浏览器不支持video标签。
 </video><br/>
-<canvas id="myCanvas" style="width: 100px;height: 80px"></canvas><br/>
+<div style="width: 100px;height: 80px;border: 1px solid red"></div>
+<canvas id="myCanvas" style="width: 100px;height: 80px ;border: 1px blue solid"></canvas><br/>
+<script>
+
+    var c=document.getElementById("myCanvas");
+    var ctx=c.getContext("2d");
+    ctx.moveTo(0,0);
+    ctx.lineTo(300,150);
+    ctx.stroke();
+</script>
 <mark>定义有记号的文本</mark>
+
 <form>
     文本输入框：
     <label >
